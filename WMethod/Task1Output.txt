@@ -1,0 +1,162 @@
+Number of Test Cases :14
+Test cases: [0, 00, 01, 1, 10, 100, 1000, 1001, 101, 1010, 1011, 11, 110, 111]
+
+FSM execution begins. Input:  0  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 1 Output: o
+
+FSM execution completed. Final state: 1
+Output pattern:o
+----------------------
+
+FSM execution begins. Input:  0 0  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 1 Output: o
+Current state: 1
+ Input: 0 Next state: 1 Output: o
+
+FSM execution completed. Final state: 1
+Output pattern:oo
+----------------------
+
+FSM execution begins. Input:  0 1  Initial state: 1
+Current state: 1
+ Input: 0 Next state: 1 Output: o
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+
+FSM execution completed. Final state: 2
+Output pattern:oe
+----------------------
+
+FSM execution begins. Input:  1  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+
+FSM execution completed. Final state: 2
+Output pattern:e
+----------------------
+
+FSM execution begins. Input:  1 0  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 0 Next state: 3 Output: e
+
+FSM execution completed. Final state: 3
+Output pattern:ee
+----------------------
+
+FSM execution begins. Input:  1 0 0  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 0 Next state: 3 Output: e
+Current state: 3
+ Input: 0 Next state: 2 Output: e
+
+FSM execution completed. Final state: 2
+Output pattern:eee
+----------------------
+
+FSM execution begins. Input:  1 0 0 0  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 0 Next state: 3 Output: e
+Current state: 3
+ Input: 0 Next state: 2 Output: e
+Current state: 2
+ Input: 0 Next state: 3 Output: e
+
+FSM execution completed. Final state: 3
+Output pattern:eeee
+----------------------
+
+FSM execution begins. Input:  1 0 0 1  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 0 Next state: 3 Output: e
+Current state: 3
+ Input: 0 Next state: 2 Output: e
+Current state: 2
+ Input: 1 Next state: 1 Output: o
+
+FSM execution completed. Final state: 1
+Output pattern:eeeo
+----------------------
+
+FSM execution begins. Input:  1 0 1  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 0 Next state: 3 Output: e
+Current state: 3
+ Input: 1 Next state: 3 Output: e
+
+FSM execution completed. Final state: 3
+Output pattern:eee
+----------------------
+
+FSM execution begins. Input:  1 0 1 0  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 0 Next state: 3 Output: e
+Current state: 3
+ Input: 1 Next state: 3 Output: e
+Current state: 3
+ Input: 0 Next state: 2 Output: e
+
+FSM execution completed. Final state: 2
+Output pattern:eeee
+----------------------
+
+FSM execution begins. Input:  1 0 1 1  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 0 Next state: 3 Output: e
+Current state: 3
+ Input: 1 Next state: 3 Output: e
+Current state: 3
+ Input: 1 Next state: 3 Output: e
+
+FSM execution completed. Final state: 3
+Output pattern:eeee
+----------------------
+
+FSM execution begins. Input:  1 1  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 1 Next state: 1 Output: o
+
+FSM execution completed. Final state: 1
+Output pattern:eo
+----------------------
+
+FSM execution begins. Input:  1 1 0  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 1 Next state: 1 Output: o
+Current state: 1
+ Input: 0 Next state: 1 Output: o
+
+FSM execution completed. Final state: 1
+Output pattern:eoo
+----------------------
+
+FSM execution begins. Input:  1 1 1  Initial state: 1
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+Current state: 2
+ Input: 1 Next state: 1 Output: o
+Current state: 1
+ Input: 1 Next state: 2 Output: e
+
+FSM execution completed. Final state: 2
+Output pattern:eoe
+----------------------
