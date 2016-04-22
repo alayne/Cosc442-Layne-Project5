@@ -383,10 +383,29 @@ public class WMethod{
      Utilities.printAllTestCases(tests); // Print tests.
      
     // Run test cases trhough utilities.runFSM method
-     for (int i = 0; i < tests.size(); i ++) {
+    /* for (int i = 0; i < tests.size(); i ++) {
     	 
     	 Utilities.runFSM(FSM, 1, tests.get(i).replace("", " "), " ");
     	 System.out.println("----------------------");
+    	 
+     } */
+     
+     for (int i = 0; i < tests.size(); i++) {
+    	 String output = Utilities.runFSM(FSM, 1, tests.get(i).replace("", " "), " ");
+    	 System.out.println("@Test");
+    	 System.out.println("public void testCase" + i + "() { ");
+    	 
+    	 
+    	 System.out.println("	b = bond.bondRegex(\"" +  tests.get(i) + "\");");
+    	 
+    	 if (output.contains("y")) {
+    		 System.out.println("	assertTrue(b);");
+    	 }
+    	 else {
+    		 System.out.println("	assertFalse(b);");
+    	 }
+    	 System.out.println("}");
+
     	 
      }
      
