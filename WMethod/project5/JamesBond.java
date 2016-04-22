@@ -9,7 +9,8 @@ public class JamesBond {
 	
 	public Boolean bondRegex(String input) {
 		
-		Pattern p = Pattern.compile("(\\d*)(\\)*)[\\(](0{2})[7](\\d*)(\\(*)[\\)]");
+		
+		Pattern p = Pattern.compile(".*[\\(].*(0{2})[7].*[\\)]");
 		Matcher m = p.matcher(input);
 		return m.matches();
 		
